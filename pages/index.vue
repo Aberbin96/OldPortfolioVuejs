@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        portafolio
+        Portafolio
       </h1>
       <h2 class="subtitle">
         Portafolio de Alejandro Berbin
