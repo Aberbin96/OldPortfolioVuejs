@@ -1,21 +1,28 @@
 <template lang="pug">
     div.app-layout 
       app-logo
-      app-nav
+      <!--app-nav-->
       nuxt
       app-footer
 </template>
-
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import AppNav from '~/components/AppNav.vue'
-import AppFooter from '~/components/AppMyName.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 export default {
   components: {
     AppLogo,
-    AppNav,
+    //AppNav,
     AppFooter
+  },
+    head () {
+    return {
+      link: [
+        { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' }
+      ]
+    }
   }
 }
 </script>

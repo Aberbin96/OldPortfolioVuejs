@@ -1,14 +1,16 @@
+@font-face {
+    font-family: Comic;
+    src: url(../fonts/SFComicScriptExtended.ttf);
+}
 body{
-    background-color:black;
+    background:url(../hour.jpg);
     color:white;
     height: 100vh;
+    font-family:Montserrat;
+    font-size: 18px;
 }
 nav{
     height: 100vh;
-    background-color: red;
-    /*position: fixed;
-    top: 0;
-    right: 0;*/
     ul{
         display: flex;
         flex-direction: column;
@@ -25,11 +27,17 @@ nav{
 }
 .app-layout{
     display: grid;
-    grid-template-areas:    "header nav"
+    /*grid-template-areas:    "header nav"
                             "content nav"
                             "footer nav";
     grid-template-rows: 5em 1fr;
-    grid-template-columns: 1fr 5vw;
+    grid-template-columns: 1fr 5vw;*/
+    grid-template-areas:    "header"
+                            "content"
+                            "footer";
+    grid-template-rows: 10vh 1fr minmax(2em, 2.5em);
+    grid-template-columns: 1fr;
+    height: 100vh;
 }
 .header{
     grid-area: header;
@@ -39,4 +47,57 @@ nav{
 }
 .content{
     grid-area: content;
+}
+.center{
+    text-align: center;
+}
+.img-perfil{
+    margin: 1.5em auto;
+    display: block;
+    border-radius: 50%;
+    border: .5em groove #f1c430;
+    border-style: double;
+    padding: .5em;
+}
+span.coming-soon{
+    width: max-content;
+    max-width: 100vw;
+    margin: auto;
+    font-family: 'Comic';
+    font-size: 3em;
+    display: block;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    a{
+        margin: 2vw;
+        font-size: 2em;
+        i{
+            padding: 3px;
+            border-radius: 10%;
+            color:white;
+        }
+    }
+    .fa-linkedin-in{
+        background: #0076b4;
+        color: white;
+    }
+    .fa-github{
+        background: black;
+        color: white;
+    }
+    .fa-twitter{
+        background: #55acef;
+        color: white;
+    }
+    .fa-instagram{
+        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        color:white;
+    }
+}
+footer{
+    span{
+        display: inline-block;
+    }
 }

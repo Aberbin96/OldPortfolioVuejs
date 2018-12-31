@@ -1,6 +1,5 @@
-<template>
-  <div class="header">
-  </div>
+<template lang="pug">
+  header.header
 </template>
 
 <style>
