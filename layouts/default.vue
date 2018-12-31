@@ -1,8 +1,24 @@
-<template>
-  <div>
-    <nuxt/>
-  </div>
+<template lang="pug">
+    div.app-layout 
+      app-logo
+      app-nav
+      nuxt
+      app-footer
 </template>
+
+<script>
+import AppLogo from '~/components/AppLogo.vue'
+import AppNav from '~/components/AppNav.vue'
+import AppFooter from '~/components/AppMyName.vue'
+
+export default {
+  components: {
+    AppLogo,
+    AppNav,
+    AppFooter
+  }
+}
+</script>
 
 <style>
 html {

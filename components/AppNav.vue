@@ -1,5 +1,5 @@
 <template lang="pug">
-    nav
+    nav.nav
         ul  
             li Inicio
             li Sobre Mi
