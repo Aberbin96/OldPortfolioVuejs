@@ -29,10 +29,10 @@ module.exports = {
   */
   loading: false,
   css: [
-    { src:'~/assets/scss/main.scss', lang: 'scss' }, 
+    { src:'~assets/scss/main.scss', lang: 'scss' }, 
   ],
   modules: [
-    ['nuxt-sass-resources-loader','~/assets/scss/main.scss'],
+    ['nuxt-sass-resources-loader','~assets/scss/main.scss'],
     ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
   ],
   plugins: [
@@ -59,7 +59,7 @@ module.exports = {
             lazy: true
           }
         })
-        watch: ['~/.nuxt/support.js']
+        watch: ['~.nuxt/support.js']
         babel: {
           presets: ['env']
         }

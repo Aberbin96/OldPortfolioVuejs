@@ -1,8 +1,8 @@
 <template lang="pug">
   section.container
-    img.img-perfil.radius(src="https://scontent-lga3-1.cdninstagram.com/vp/9bf6173cde1f0f92a77f4cda63bf9c56/5CD966C3/t51.2885-19/29400543_183920785749802_8425297642161963008_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com" alt="AlejandroInstagram")
+    img.img-perfil(src="https://scontent-lga3-1.cdninstagram.com/vp/9bf6173cde1f0f92a77f4cda63bf9c56/5CD966C3/t51.2885-19/29400543_183920785749802_8425297642161963008_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com" alt="AlejandroInstagram")
     h1.center.title Alejandro Berbin
-    h2.center.subtitle Web Developer
+    h2.center.subtitle Blog
     div.links
       a(href="instagram.com/alexcam_96/" target="_blank") 
         i.fab.fa-instagram

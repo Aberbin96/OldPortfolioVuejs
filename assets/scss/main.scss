@@ -3,25 +3,35 @@
     src: url(../fonts/SFComicScriptExtended.ttf);
 }
 body{
-    background:url(../hour.jpg);
+    background:linear-gradient(#240b35, #a91232);
+    background-attachment: fixed;
     color:white;
-    height: 100vh;
+    min-height: 100vh;
     font-family:Montserrat;
     font-size: 18px;
+    margin: 0;
 }
 nav{
     height: 100vh;
+    position: fixed;
+    right: 0;
+    background: linear-gradient(-90deg,rgba(0,0,0,0.4), rgba(0,0,0,0));
     ul{
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
-        padding: 10vh 0;
+        padding: 0;
         align-items: center;
+        margin: 0;
         li{
             list-style: none;
             transform: rotate(90deg);
             width: max-content;
+            a{
+                color:white;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -35,8 +45,8 @@ nav{
     grid-template-areas:    "header"
                             "content"
                             "footer";
-    grid-template-rows: 10vh 1fr minmax(2em, 2.5em);
     grid-template-columns: 1fr;
+    grid-template-rows: 10vh 1fr minmax(2em, 2.5em);
     height: 100vh;
 }
 .header{
@@ -54,7 +64,6 @@ nav{
 .img-perfil{
     margin: 1.5em auto;
     display: block;
-    border-radius: 50%;
     border: .5em groove #f1c430;
     border-style: double;
     padding: .5em;
@@ -100,4 +109,28 @@ footer{
     span{
         display: inline-block;
     }
+}
+.container{
+    width: 70%;
+    margin: 0 20% 0 10%;
+}
+.box-perfil{
+    align-items: center;
+    .img-box{
+        shape-outside:circle(50% at 50% 50%); 
+        min-width: 250px;
+        min-height: 250px;
+        float: left;
+        align-items: center;
+        display: flex;
+        padding-right: 2em;
+        img{
+            width:100%;
+        }
+    }
+    .parrafo{
+    }
+}
+.radius{
+    border-radius: 50%;
 }
