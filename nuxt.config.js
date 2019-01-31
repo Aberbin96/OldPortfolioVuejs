@@ -21,7 +21,7 @@ module.exports = {
       { name:'keywords', content:'portfolio, web, developer, web developer, backend, frontend, alejandro, berbin, alejandro berbin'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon1.ico' }
     ]
   },
   /*
