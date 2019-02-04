@@ -2,23 +2,23 @@
     nav.nav
         span.mobile-menu(@click="ShowMenu") 
             i.fas.fa-bars
-        ul#menu(v-bind:class="{ mobile: menu_mobile }")
-            li 
+        ul#menu(v-bind:class="{ mobile_hidden: menu_mobile }")
+            li(@click="ShowMenu")
                 nuxt-link(to="/") Inicio
-            li 
+            li(@click="ShowMenu")
                 nuxt-link(to="/about") Sobre Mi
             li 
-                nuxt-link.block(to="/portafolio") Portafolio
+                .block Portafolio
             li 
-                nuxt-link.block(to="/blog") Blog
+                .block Blog
             li 
-                nuxt-link.block(to="/contact") Contacto
+                .block Contacto
 </template>
 <script>
 export default {
     data () {
         return {
-            menu_mobile:false
+            menu_mobile:true
         }
     },
     methods:{
