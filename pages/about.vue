@@ -17,7 +17,7 @@
           p.center.subtitle Historia de Platzi
         .card.shadow
           img.img-icon.radius(src="~/assets/image/cuc.png" alt="CUC")
-          p.center.subtitle HIstoria del CUC
+          p.center.subtitle Historia del CUC
     script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
 </template>
 
