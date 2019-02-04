@@ -24,11 +24,11 @@ export default {
 </script>
 <style>
   span.center.coming-soon{
-      animation: mymove 2s infinite;
+      animation: mymove 1s infinite;
       animation-direction: alternate;
   }
     @keyframes mymove {
         from {transform: translateY(0px); }
-        to {transform: translateY(20px);}
+        to {transform: translateY(.2em);}
     }
 </style>

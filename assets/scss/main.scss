@@ -126,6 +126,28 @@ footer{
 .f-just-b{
     align-items: flex-end;
 }
+.input-form > *{
+    border: none;
+    width: 100%;
+    margin: 1em 0;
+    background-color: rgba(186,186,186,0.2);
+    border-radius: 10px;
+    height: 2em;
+    text-align: center;
+    font-family:Montserrat;
+}
+.input-form textarea{
+    height: 4em;
+    text-align: justify;
+}
+input[type="submit"]{
+    padding: 1em 20%;
+    border-radius: 50px;
+    background: #240b35;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
 /********************************************/
 /*Mobile*/
 @media only screen and (max-width: 980px){
@@ -234,9 +256,9 @@ footer{
 /*Free Style*/
 .links{
     display: flex;
-    justify-content: space-evenly;
-    width: 30%;
+    justify-content: space-around;
     margin: auto;
+    max-width: 200px;
     a{
         font-size: 2em;
         i{

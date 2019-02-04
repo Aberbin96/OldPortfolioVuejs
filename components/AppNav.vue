@@ -12,7 +12,7 @@
             li 
                 .block Blog
             li 
-                .block Contacto
+                nuxt-link(to="/contact") Contacto
 </template>
 <script>
 export default {

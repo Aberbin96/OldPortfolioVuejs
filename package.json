@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.4",
+    "axios": "^0.18.0",
     "npm": "^6.5.0",
     "nuxt": "^2.3.4",
     "vue2-hammer": "^2.1.2"
