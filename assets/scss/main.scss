@@ -74,9 +74,6 @@ footer{
 }
 /********************************************/
 /*Standar*/
-.max-200{
-    max-width: 200px;
-}
 .max-250{
     max-width: 250px;
 }
@@ -86,6 +83,7 @@ footer{
 }
 .box{
     padding: 2em 0;
+    width: 100%;
 }
 .radius{
     border-radius: 50%;
@@ -93,35 +91,62 @@ footer{
 .m-0{
     margin: 0;
 }
+.m-center{
+    margin: 0 auto;
+}
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.card-center-text{
+    padding-left: 1em;
+    margin-top: 10%;
+}
 .card{
     background-color: white;
     padding: 1em;
-    border-radius: 15px;
-    color: #000
+    border-radius: 0px;
+    color: #000;
+    margin: 1em;
+    width: 20%;
 }
-.box.flex{
+.flex{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.w-2{
-    max-width: 40%;
+.flex-cover{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    flex-basis: content;
 }
-.img-perfil{
-    margin: 1.5em auto;
+.img-responsive{
     display: block;
+    width: 100%;
+}
+.img-thum{
+    shape-outside:circle(50% at 50% 50%); 
+    float: left;
+    display: flex;
+    width: 25%;
+}
+.img-icon{ 
+    max-width: 50px;
+}
+.inline{
+    display: inline;
+}
+.yellow-border{
     border: .5em groove #f1c430;
     border-style: double;
     padding: .5em;
 }
-.img-icon{
-    margin: 1.5em auto;
-    display: block;
-    padding: .5em;
-    max-width: 100px;
-}
 .shadow{
-    box-shadow: 5px 5px 50px #000;
+    box-shadow: 5px 5px 10px #000;
 }
 .f-just-b{
     align-items: flex-end;
@@ -130,7 +155,7 @@ footer{
     border: none;
     width: 100%;
     margin: 1em 0;
-    background-color: rgba(186,186,186,0.2);
+    background-color: rgba(186,186,186,0.8);
     border-radius: 10px;
     height: 2em;
     text-align: center;
@@ -189,31 +214,25 @@ input[type="submit"]{
         display: block;
         padding: .5em;
         position: absolute;
-        right: 5px;
+        right: 2%;
         font-size: 1.2em;
         top: 5px;
     }
-    .perfil{
-        .img-box {
-            width: 100%;
+    .img-thum {
+            width: 80%;
             float: none;
             display: flex;
             justify-content: center;
             margin-bottom: 1em;
-        }
-        .sub-box{
-            .title{
+    }
+    .sub-box{
+        .title{
                 text-align: center;
-            }
-            p{
+        }
+        p{
                 margin: .6em 1em;
                 text-align: justify;
-            }
         }
-    }
-    .w-2 {
-        max-width: 100%;
-        margin: 1em;
     }
 }
 /********************************************/
@@ -292,26 +311,11 @@ span.coming-soon{
     font-size: 3em;
     display: block;
 }
-.perfil{
-    align-items: center;
-    .img-box{
-        shape-outside:circle(50% at 50% 50%); 
-        min-width: 250px;
-        min-height: 250px;
-        float: left;
-        align-items: center;
-        display: flex;
-        padding-right: 2em;
-        img{
-            width:100%;
-        }
-    }
-}
+
 .projects{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-
 .block{
     text-decoration-line: line-through;
     color: #666;
@@ -340,13 +344,13 @@ span.coming-soon{
 }
 .single-chart .circular-chart .circle-bg {
     fill: none;
-    stroke: #494f70;
+    stroke: #b3b3b333;
     stroke-width: 3.8;
 }
 .single-chart .circular-chart .circle {
     fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
+    stroke-width: 3.8;
+    /*stroke-linecap: round;*/
     -webkit-animation: progress 2s ease-out both;
     animation: progress 1s ease-out both;
         animation-delay: 0s;

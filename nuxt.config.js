@@ -33,12 +33,8 @@ module.exports = {
   ],
   modules: [
     ['nuxt-sass-resources-loader','~assets/scss/main.scss'],
-    ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }],
-    '@nuxtjs/axios'
+    ['@nuxtjs/component-cache', { maxAge: 1000 * 60 * 60 }]
   ],
-  axios: {
-    // proxyHeaders: false
-  },
   plugins: [
     //{ src: '~plugins/vue-hammer', ssr: false }
   ],

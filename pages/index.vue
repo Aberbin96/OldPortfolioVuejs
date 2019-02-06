@@ -1,6 +1,7 @@
 <template lang="pug">
     section.content.container
-        img.img-perfil.radius.max-200(src="~/assets/image/my.jpg" alt="AlejandroInstagram")
+        figure.max-250.m-center.yellow-border.radius
+            img.img-responsive.radius(src="~/assets/image/my.jpg" alt="AlejandroInstagram")
         h1.center.title.m-0 Alejandro Berbin
         h2.center.subtitle.m-0 Web Developer
         div.links

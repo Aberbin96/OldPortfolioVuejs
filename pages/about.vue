@@ -1,8 +1,8 @@
 <template lang="pug">
     section.content.container.about
         .box.perfil
-            .img-box
-                img.radius.max-250.shadow(src="~/assets/image/my.jpg" alt="Alejandro")
+            figure.img-thum
+                img.img-responsive.radius.shadow(src="~/assets/image/my.jpg" alt="Alejandro")
             .sub-box
                 h1.title Ahora un poco de mi
                 p Soy un desarrollador web venezolano.
@@ -14,13 +14,19 @@
             graph-circle(message="Vue.Js" color="#00b37d" prct="65" class="small")
             graph-circle(message="Wordpress" color="#217098" prct="70" class="big")
             graph-circle(message="Laravel" color="#f34e39" prct="70" class="small")
-        .box.flex.estudios
-            .card.w-2.shadow
-                img.img-icon.radius(src="~/assets/image/platzi.png" alt="Platzi")
-                p.center.subtitle En el año 2017, fui uno de las "1000" personas que fueron becadas por Platzi, allí realicé un muchos de cursos orientados al desarrollo web.
-            .card.w-2.shadow
-                img.img-icon.radius(src="~/assets/image/cuc.png" alt="CUC")
-                p.center.subtitle En el año 2014 entre en el Colegio Universitario de Caracas y en el obtuve el título de "Ingeniero en Informática".
+        .box.estudios.flex-cover
+                .card.shadow
+                    figure.img-icon.m-center
+                        img.radius.img-responsive(src="~/assets/image/platzi.png" alt="Platzi")
+                    p.center.m-0.right.card-center-text Mi experiencia en Platzi
+                .card.shadow
+                    figure.img-icon.m-center
+                        img.radius.img-responsive(src="~/assets/image/cuc.png" alt="CUC")
+                    p.center.m-0.right.card-center-text Mi experiencia en la Universidad
+                .card.shadow
+                    figure.img-icon.m-center
+                        img.radius.img-responsive(src="~/assets/image/cuc.png" alt="CUC")
+                    p.center.m-0.right.card-center-text Mi experiencia en la Universidad
 </template>
 
 <script>
