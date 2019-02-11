@@ -23,7 +23,7 @@ nav{
     ul{
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
         justify-content: space-evenly;
         padding: 0;
         align-items: center;
@@ -74,6 +74,9 @@ footer{
 }
 /********************************************/
 /*Standar*/
+.w-2{
+    max-width: 49%;
+}
 .max-250{
     max-width: 250px;
 }
@@ -110,7 +113,6 @@ footer{
     border-radius: 0px;
     color: #000;
     margin: 1em;
-    width: 20%;
 }
 .flex{
     display: flex;
@@ -131,7 +133,7 @@ footer{
 .img-thum{
     shape-outside:circle(50% at 50% 50%); 
     float: left;
-    display: flex;
+    display: block;
     width: 25%;
 }
 .img-icon{ 
@@ -176,6 +178,9 @@ input[type="submit"]{
 /********************************************/
 /*Mobile*/
 @media only screen and (max-width: 980px){
+    .w-2{
+        max-width: 100%;
+    }
     .container {
         width: 100%;
         margin: 0;
@@ -188,20 +193,25 @@ input[type="submit"]{
         z-index: 1;
         background: none;
         ul{
-            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-            animation: enter-height .5s ease-out;
-            animation-fill-mode:forwards;
-            li {
-                transform: rotate(0deg);
-                font-size: 2em;
-                transition: font-size .5s;
-            }
+            position: absolute;
+            top: 0;
         }
         .mobile_hidden{
             animation: back-height .5s ease-out;
             animation-fill-mode:forwards;
             li {
                 font-size:0;
+            }
+        }
+        .mobile_show{
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
+            animation: enter-height .5s ease-out;
+            animation-fill-mode:forwards;
+            height: 100vh;
+            li {
+                transform: rotate(0deg);
+                font-size: 2em;
+                transition: font-size .5s;
             }
         }
     }
@@ -258,13 +268,13 @@ input[type="submit"]{
             height: 0;
         }
         100%{
-            height: 100;
+            height: 100%;
             display:flex;
             visibility: visible;
         }
     }
     @keyframes back-height{
-        from {height: 100;}
+        from {height: 100%;}
         to {
             height: 0;
             display:none;
@@ -374,4 +384,57 @@ span.coming-soon{
     0%{
         stroke-dasharray: 0 100;
     }
+}
+.estudios > div{
+    background: #000;
+}
+.c-preview {
+    background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #ffffff28 50%, rgba(254, 210, 115, 0.486) 60%,#ffffff00 90%, #ffffff00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #000000 0%,#000000 25%,#ffffff28 50%,rgba(254, 210, 115, 0.486) 60%,#ffffff00 90%,#ffffff00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #000000 0%,#000000 25%,#ffffff28 50%,rgba(254, 210, 115, 0.486) 60%,#ffffff00 90%,#ffffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    max-width: 100vw;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: .5s all;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: .5;
+        mix-blend-mode: screen;
+    }
+    &__title {
+        position: relative;
+        z-index: 10;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+  
+    &:hover {
+        background-position: 100% 100%;
+        &__title {
+        text-shadow: 0 0 20px rgba(0,0,0,1);
+        }
+    }
+}
+.cuc{
+    background: #000 url(../image/cuc.png) no-repeat center center;
+    background-size: cover;
+}
+.platzi{
+    background: #000 url(../image/platzi.png) no-repeat center center;
+    background-size: cover;
 }

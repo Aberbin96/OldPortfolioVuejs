@@ -4,7 +4,7 @@
             img.img-responsive.radius(src="~/assets/image/my.jpg" alt="AlejandroInstagram")
         h1.center.title.m-0 Alejandro Berbin
         h2.center.subtitle.m-0 Web Developer
-        div.links
+        //div.links
             a(href="instagram.com/alexcam_96/" target="_blank") 
                 i.fab.fa-instagram
             a( href="https://github.com/Aberbin96" target="_blank") 

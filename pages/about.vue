@@ -2,7 +2,8 @@
     section.content.container.about
         .box.perfil
             figure.img-thum
-                img.img-responsive.radius.shadow(src="~/assets/image/my.jpg" alt="Alejandro")
+                //img-circle.img-responsive.radius.shadow
+                img.img-responsive.radius.shadow(src="~/assets/image/my.jpg" alt="AlejandroInstagram")
             .sub-box
                 h1.title Ahora un poco de mi
                 p Soy un desarrollador web venezolano.
@@ -15,27 +16,21 @@
             graph-circle(message="Wordpress" color="#217098" prct="70" class="big")
             graph-circle(message="Laravel" color="#f34e39" prct="70" class="small")
         .box.estudios.flex-cover
-                .card.shadow
-                    figure.img-icon.m-center
-                        img.radius.img-responsive(src="~/assets/image/platzi.png" alt="Platzi")
-                    p.center.m-0.right.card-center-text Mi experiencia en Platzi
-                .card.shadow
-                    figure.img-icon.m-center
-                        img.radius.img-responsive(src="~/assets/image/cuc.png" alt="CUC")
-                    p.center.m-0.right.card-center-text Mi experiencia en la Universidad
-                .card.shadow
-                    figure.img-icon.m-center
-                        img.radius.img-responsive(src="~/assets/image/cuc.png" alt="CUC")
-                    p.center.m-0.right.card-center-text Mi experiencia en la Universidad
+            div
+                card-blog(message="Mi experiencia en Platzi" color="#e94e31" componentclass="platzi")
+            div
+                card-blog(message="Mi experiencia en el CUC" color="#e94e31" componentclass="cuc")
 </template>
 
 <script>
 
 import GraphCircle from '~/components/GraphCircle.vue'
+import CardBlog from '~/components/CardBlog.vue'
 
 export default {
   components: {
-    GraphCircle
+    GraphCircle,
+    CardBlog
   },
   data () {
       return {
