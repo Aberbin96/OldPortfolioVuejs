@@ -11,7 +11,7 @@
                 .block Portafolio
             li 
                 .block Blog
-            li 
+            li(@click="ShowMenu")
                 nuxt-link(to="/contact") Contacto
 </template>
 <script>
@@ -23,7 +23,7 @@ export default {
     },
     methods:{
         ShowMenu() {
-            this.menu_mobile = (this.menu_mobile != 'mobile_show')? 'mobile_show' : 'mobile_hidden';
+            this.menu_mobile = (this.menu_mobile != 'mobile_show')? 'mobile_show' : '';
   	    }
     },
     computed: {

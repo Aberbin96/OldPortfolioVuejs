@@ -24,7 +24,7 @@ export default {
     return {
       link: [
         { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Playfair+Display' }
       ]
     }
   }

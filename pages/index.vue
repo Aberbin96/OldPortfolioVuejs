@@ -1,10 +1,8 @@
 <template lang="pug">
     section.content.container
         .box
-            figure.max-250.m-center.yellow-border.radius
-                img.img-responsive.radius(src="~/assets/image/my.jpg" alt="AlejandroInstagram")
-            h1.center.title.m-0.coming-soon Alejandro Berbin
-            h2.center.subtitle.m-0 Web Developer
+            div.text-container
+                h1.name.center ALEJANDRO BERBIN
             div.links.box
                 a(href="instagram.com/alexcam_96/" target="_blank") 
                     i.fab.fa-instagram
@@ -12,6 +10,12 @@
                     i.fab.fa-github
                 a( href="https://www.linkedin.com/in/alejandro-berbin/" target="_blank")
                     i.fab.fa-linkedin-in
+                a( href="https://codepen.io" target="_blank")
+                    i.fab.fa-codepen
+                a( href="https://www.goodreads.com/" target="_blank")
+                    i.fab.fa-goodreads-g
+            span.description.center I'm a Web Developer. I'm looking to make people's projects a reality!
+            
 </template>
 
 <script>
